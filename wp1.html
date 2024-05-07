@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Form Task</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 20px;
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .square-form-container {
+      width: 100%;
+      max-width: 400px;
+
+    }
+    .text-center {
+      color: #4A5642;
+      margin-bottom: 20px;
+    }
+ 
+    .square-form {
+      background-color: #fff;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+      width: 360px; 
+      height: 500px;
+      max-width: 100%;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    
+    .search-btn {
+      background-color: #4c663a; 
+      color: #fff; 
+      border-radius: 25px;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 50px;
+      margin-left: 20%;
+      background-color: #4b663a;
+      overflow: none;
+      border: none; /* Remove black border */
+    }
+
+    .search-btn:hover {
+      background-color: #4a6637; 
+    }
+    
+
+    .form-control {
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="square-form">
+    <h2 class="text-center" style="font-size: 25px; ">Find your Partner</h2>
+    <form>
+      <div class="form-group">
+        <label for="age" >Age</label>
+        <select class="form-control" id="age">
+          <option value="">Select Age</option>
+          <option value="0-20">0 to 18</option>
+          <option value="21-40">18 to 40</option>
+          <option value="41-60">41 to 60</option>
+          <option value="61+">61+</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="religion" >Religion</label>
+        <select class="form-control" id="religion">
+          <option value="">Select Religion</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Hinduism">Hinduism</option>
+          <option value="Muslim">Muslim</option>
+          <option value="Buddhism">Buddhism</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="city" >City</label>
+        <select class="form-control" id="city">
+          <option value="">Select City</option>
+          <option value="Pune">Pune</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <button class="search-btn">Search</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
